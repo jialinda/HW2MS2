@@ -1,0 +1,25 @@
+[
+    {
+      "name": "Fetching 1 movie by keyword",
+      "description": "",
+      "type": "curl",
+      "public": true,
+      "test": {
+        "command": "curl -X GET http://localhost:8080/query?title=Stars",
+        "response-type": "json",
+        "response": {
+          "status": 200,
+          "json": [
+            {
+              "primaryTitle": "Under the Stars and Bars",
+              "actors": [ "Francis Ford" ],
+              "directors": [ "Gaston Méliès" ],
+              "writers": [],
+              "averageRating": "6.1",
+              "numVotes": "17"
+            }
+          ]
+        }
+      }
+    }
+  ]
