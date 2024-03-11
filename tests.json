@@ -1,6 +1,6 @@
 [
     {
-      "name": "Fetching 1 movie by keyword",
+      "name": "getting 1 movie by keyword 'Dance'. ",
       "description": "",
       "type": "curl",
       "public": true,
@@ -9,16 +9,19 @@
         "response-type": "json",
         "response": {
           "status": 200,
-          "json": [
-            {
-              "primaryTitle": "Under the Stars and Bars",
-              "actors": [ "Francis Ford" ],
-              "directors": [ "Gaston Méliès" ],
-              "writers": [],
-              "averageRating": "6.1",
-              "numVotes": "17"
-            }
-          ]
+          "json": {
+            "results":[
+                {
+                    "primaryTitle":"Under the Stars and Bars",
+                    "actors":[ "Francis Ford" ],
+                    "directors": [ "Gaston Méliès" ],
+                    "writers": [],
+                    "averageRating":"6.1",
+                    "numVotes":"17"
+                }
+            ],
+            "numResults": 1
+          }
         }
       }
     }
